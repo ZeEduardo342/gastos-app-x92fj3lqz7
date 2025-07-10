@@ -1,0 +1,64 @@
+nav button.ativo {
+ background-color: #22282e;
+  font-weight: bold;
+  color: #C7CFD9;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body {
+  background: url(bg.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Para navegadores baseados em Webkit (Chrome, Safari, Edge) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Para Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+nav button:hover {
+  background-color: #68798D;
+}
+
+nav button {
+  background-color: #3F4B59;
+  color: #C7CFD9;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.aba {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+  display: none;
+}
+
+.aba.ativa {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+form label {
+  display:block;
+  font-weight: bold;
+  color: #C7CFD9;
+}

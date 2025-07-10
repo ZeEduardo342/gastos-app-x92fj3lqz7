@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controle de Gastos</title>
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <!-- Seu CSS principal -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  
+</head>
+<body>
+  <nav>
+    <button data-target="pg_principal">Principal</button>
+    <button data-target="pg_historico">Histórico</button>
+    <button data-target="pg_fixos">Fixos</button>
+  </nav>
+
+  <main>
+    <section id="pg_principal" class="aba"></section>
+    <section id="pg_historico" class="aba"></section>
+    <section id="pg_fixos" class="aba"></section>
+  </main>
+
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+  import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyA1md79IxvZ_UNBnhntfRV-4ikcMCsYcnQ",
+    authDomain: "controlegastos-ce3aa.firebaseapp.com",
+    projectId: "controlegastos-ce3aa",
+    storageBucket: "controlegastos-ce3aa.firebasestorage.app",
+    messagingSenderId: "577931310089",
+    appId: "1:577931310089:web:8e5a915b206ba92f9bf4d8"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  window.firebaseDb = db; // torna o Firestore acessível no main.js
+</script>
+
+  
+  <!-- Script principal do app (inclui Firebase e navegação) -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
