@@ -176,7 +176,7 @@ resumoMensal.style.color = '#C7CFD9';
       <form id="formTransacao" style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 400px;">
         <div style="width: 100%;">
           <label style="font-weight: bold;">Valor:</label><br>
-          <input type="number" step="0.01" id="inputValor" placeholder="R$ 0,00" required style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid #C7CFD9; background-color: #131925; color: #C7CFD9;">
+          <input type="number" step="any" id="inputValor" placeholder="R$ 0,00" required style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid #C7CFD9; background-color: #131925; color: #C7CFD9;">
         </div>
 
         <div style="width: 100%;">
@@ -267,7 +267,7 @@ carregarResumoMensal();
     </div>
     <div style="width: 100%;">
       <label>Valor Mensal:</label><br>
-      <input type="number" id="fixoValor" step="0.01" required style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid #C7CFD9; background-color: #131925; color: #C7CFD9;">
+      <input type="number" id="fixoValor" step="any" required style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid #C7CFD9; background-color: #131925; color: #C7CFD9;">
     </div>
     <div style="width: 100%;">
       <label>Dia do Vencimento:</label><br>
@@ -290,7 +290,7 @@ carregarResumoMensal();
     </div>
     <div style="width: 100%;">
       <label>Valor Total:</label><br>
-      <input type="number" id="parceladoValor" step="0.01" required style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid #C7CFD9; background-color: #131925; color: #C7CFD9;">
+      <input type="number" id="parceladoValor" step="any" required style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid #C7CFD9; background-color: #131925; color: #C7CFD9;">
     </div>
     <div style="width: 100%;">
       <label>Número de Parcelas:</label><br>
